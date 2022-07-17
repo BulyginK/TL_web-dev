@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    width: 1920px;
+    height: 938px;
+    background-image: url("/img/Background.png");
+    background-size: 100%;
+}
+
+.rooms {
+    position: relative;
+    width: 1180px;
+    margin: 239px auto;
+}
+
+.rooms__title {
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 33px;
+    font: 36px/55px 'Roboto';
+    text-transform: uppercase;
+}
+
+.rooms__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rooms__room {
+    width: 372px;
+    height: 372px;
+    margin-bottom: 33px;
+}
+
+.rooms__room::before {
+    content: "";
+    position: absolute;
+    width: 372px;
+    height: 372px;
+    background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, rgb(10, 34, 64) 100%);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.rooms__room--pic {
+    position: absolute;
+    width: 372px;
+    height: 372px;
+    background: rgb(45, 80, 124);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+}
+
+.rooms__room--info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 24px 24px 0 24px;
+    z-index: 2;
+}
+
+.rooms__room--best-price-gurantee {
+    position: absolute;
+    display: flex;
+    top: 24px;
+}
+
+.rooms__room--best-price-gurantee--text {
+    padding: 4px 4px 5px 16px;
+    font: 14px/21px 'Roboto';
+    color: rgb(255, 255, 255);
+    background: rgb(255, 118, 71);
+    border-radius: 3px 0px 0px 3px;
+}
+
+.rooms__room--description {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.rooms__room--description--title {
+    font: 24px/32px 'Roboto';
+    margin-bottom: 9px;
+}
+
+.rooms__room--description--text {
+    font: 16px/24px 'Open Sans';
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rooms__room--description--price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+}
+
+.rooms__room--price-button {
+    padding: 11px 25px;
+    font: 16px/24px 'Open Sans';
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(249, 17, 85);
+    border-radius: 5px;
+}
+
+.rooms__room--description--price p {
+    font: 16px/24px 'Open Sans';
+    font-weight: 700;
+}
+
+.rooms__room--description--price span {
+    font: 24px/32px 'Roboto';
+    font-weight: 700;
+    color: rgb(255, 75, 119);
+}
+
+.rooms__room--description--price span>span {
+    color: #999999;
+    font-weight: 400;
+}
