@@ -26,20 +26,20 @@
 .room__foto-block::after {
     content: "";
     position: absolute;
-	top: 0;      
-	left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-	height: 100%;
+    height: 100%;
     background: linear-gradient(180deg, #0A22401A 0%, #0A2240 100%);
     border-radius: 10px;
 }
 
 .room--overlay {
     position: absolute;
-	top: 0;      
-	left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-	height: 100%;
+    height: 100%;
     background: #ffffff66;
     border-radius: 10px;
     z-index: 1;
@@ -99,7 +99,6 @@
 .room__text-description {
     font: 16px/24px 'Open Sans';
     padding: 9px 0 20px;
-    border-bottom: 1px solid #FFFFFF33;
 }
 
 .room__price-block {
@@ -107,6 +106,7 @@
     align-items: center;
     justify-content: space-between;
     height: 96px;
+    border-top: 1px solid #FFFFFF33;
 }
 
 .room__price-text {
@@ -152,7 +152,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
+    width: 100%;
     height: 96px;
     margin: 0 -24px;
     background: #3C3E43;
