@@ -5,17 +5,16 @@
 }
 
 .container {
-    position: absolute;
-    width: 1920px;
+    /* position: absolute; */
     height: 938px;
     background-image: url("/img/Background.png");
     background-size: 100%;
 }
 
 .rooms {
-    position: relative;
-    width: 1180px;
+    max-width: 1215px;
     margin: 239px auto;
+
 }
 
 .rooms__title {
@@ -23,6 +22,7 @@
     text-align: center;
     margin-bottom: 33px;
     font: 36px/55px 'Roboto';
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -35,7 +35,12 @@
 .rooms__room {
     width: 372px;
     height: 372px;
-    margin-bottom: 33px;
+    margin: 0 16.5px 16.5px;
+}
+
+.rooms__room:hover {
+    box-shadow: 0px 4px 15px #00000099;
+    border-radius: 10px;
 }
 
 .rooms__room::before {
@@ -43,7 +48,7 @@
     position: absolute;
     width: 372px;
     height: 372px;
-    background: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, rgb(10, 34, 64) 100%);
+    background: linear-gradient(180deg, #0A22401A 0%, #0A2240 100%);
     border-radius: 10px;
     z-index: 1;
 }
@@ -52,8 +57,8 @@
     position: absolute;
     width: 372px;
     height: 372px;
-    background: rgb(45, 80, 124);
-    border: 1px solid rgb(234, 234, 234);
+    background: #2D507C;
+    border: 1px solid #EAEAEA;
     border-radius: 10px;
 }
 
@@ -76,26 +81,38 @@
 .rooms__room--best-price-gurantee--text {
     padding: 4px 4px 5px 16px;
     font: 14px/21px 'Roboto';
-    color: rgb(255, 255, 255);
-    background: rgb(255, 118, 71);
+    color: #FFFFFF;
+    background: #FF7647;
     border-radius: 3px 0px 0px 3px;
 }
 
 .rooms__room--description {
     display: flex;
     flex-direction: column;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
 }
 
 .rooms__room--description--title {
     font: 24px/32px 'Roboto';
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
     margin-bottom: 9px;
+}
+
+.rooms__room--description--title:hover {
+    text-decoration: underline;
+}
+
+.rooms__room--description--title:active {
+    text-decoration: none;
+    color: rgba(187, 187, 187, 1)
 }
 
 .rooms__room--description--text {
     font: 16px/24px 'Open Sans';
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #FFFFFF33;
 }
 
 .rooms__room--description--price {
@@ -103,16 +120,6 @@
     align-items: center;
     justify-content: space-between;
     height: 96px;
-}
-
-.rooms__room--price-button {
-    padding: 11px 25px;
-    font: 16px/24px 'Open Sans';
-    font-weight: 700;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background: rgb(249, 17, 85);
-    border-radius: 5px;
 }
 
 .rooms__room--description--price p {
@@ -123,10 +130,55 @@
 .rooms__room--description--price span {
     font: 24px/32px 'Roboto';
     font-weight: 700;
-    color: rgb(255, 75, 119);
+    color: #FF4B77;
 }
 
 .rooms__room--description--price span>span {
     color: #999999;
     font-weight: 400;
+}
+
+.rooms__room--description--reserved-button {
+    padding: 11px 25px;
+    font: 16px/24px 'Open Sans';
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #F91155;
+    border-radius: 5px;
+}
+
+.rooms__room--description--reserved-button:hover {
+    background: #D8003F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rooms__room--description--reserved-button:active {
+    color: #F9637C;
+}
+
+.rooms__room--description--no-price {
+    display: none;
+}
+
+.rooms__room--description--room-reserved {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 372px;
+    height: 96px;
+    margin: 0 -24px;
+    background: #3C3E43;
+    border-radius: 0 0 10px 10px;
+}
+
+.rooms__room--description--room-reserved p {
+    font: 14px/21px 'Open Sans';
+    line-height: 21px;
+    text-align: center;
+}
+
+.rooms__room--description--room-reserved a {
+    color: #FF4B77;
+    text-decoration: none;
 }
