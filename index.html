@@ -11,96 +11,105 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/room.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <main class="rooms">
             <h1 class="rooms__title">Номера и цены</h1>
-            <div class="rooms__block">
-                <section class="rooms__room">
-                    <img class="rooms__room--pic" src="./img/ExecutiveSuite.png" alt="Представительский люкс">
-                    <div class="rooms__room--info">
-                        <div class="rooms__room--description">
-                            <div>
-                                <a href="#" class="rooms__room--description--title">
+            <div class="rooms__rooms-section">
+                <section class="room">
+                    <div class="room__foto-block">
+                        <img class="room__foto" src="./img/ExecutiveSuite.png" alt="">
+                    </div>
+                    <div class="room__info">
+                        <div class="room__description">
+                            <h3>
+                                <a class="room__title" href="#">
                                     Представительский люкс
                                 </a>
-                            </div>
-                            <p class="rooms__room--description--text">
+                            </h3>
+                            <p class="room__text-description">
                                 Эксклюзивный номер с панорамным видом на центр города Москвы
                             </p>
-                            <div class="rooms__room--description--price">
+                            <div class="room__price-block">
                                 <div>
-                                    <p>Цена за сутки <br>от
-                                        <span> 7900
-                                            <span> ₽</span>
+                                    <p class="room__price-text">Цена за сутки <br>от
+                                        <span class="room__price-text--red-price"> 7900
+                                            <span class="room__price-text--grey-symbol-rub"> ₽</span>
                                         </span>
                                     </p>
                                 </div>
-                                <a href="#" class="rooms__room--description--reserved-button">Забронировать</a>
+                                <a class="room__reserved-button" href="#">Забронировать</a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="rooms__room">
-                    <img class="rooms__room--pic" src="./img/Duplex.png" alt="Дуплекс">
-                    <div class="rooms__room--info">
-                        <div class="rooms__room--best-price-gurantee">
-                            <div class="rooms__room--best-price-gurantee--text">Гарантия лучшей цены!</div>
-                            <img src="./img/icon-discount.png" alt="icon-discount">
+                <section class="room">
+                    <div class="room__foto-block">
+                        <img class="room__foto" src="./img/Duplex.png" alt="">
+                    </div>
+                    <div class="room__info">
+                        <div class="room__icon-discount">
+                            <div class="room__icon-discount-text">Гарантия лучшей цены!</div>
+                            <img src="./img/icon-discount.png" alt="">
                         </div>
-                        <div class="rooms__room--description">
-                            <div>
-                                <a href="#" class="rooms__room--description--title">
+                        <div class="room__description">
+                            <h3>
+                                <a class="room__title" href="#">
                                     Дуплекс
                                 </a>
-                            </div>
-                            <p class="rooms__room--description--text">
+                            </h3>
+                            <p class="room__text-description">
                                 Просторный двухкомнатный номер с шикарным видом на парк
                             </p>
-                            <div class="rooms__room--description--price">
+                            <div class="room__price-block">
                                 <div>
-                                    <p>Цена за сутки <br>от
-                                        <span> 5700
-                                            <span> ₽</span>
+                                    <p class="room__price-text">Цена за сутки <br>от
+                                        <span class="room__price-text--red-price"> 5700
+                                            <span class="room__price-text--grey-symbol-rub"> ₽</span>
                                         </span>
                                     </p>
                                 </div>
-                                <a href="#" class="rooms__room--description--reserved-button">Забронировать</a>
+                                <a class="room__reserved-button" href="#">Забронировать</a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="rooms__room">
-                    <img class="rooms__room--pic" src="./img/BusinessSuite.png" alt="Бизнес-люкс">
-                    <div class="rooms__room--info">
-                        <div class="rooms__room--description">
-                            <div>
-                                <a href="#" class="rooms__room--description--title">
+                <section class="room">
+                    <div class="room__foto-block">
+                        <img class="room__foto" src="./img/BusinessSuite.png" alt="">
+                        <div class="room--overlay"></div>
+                    </div>
+                    <div class="room__info">
+                        <div class="room__description">
+                            <h3>
+                                <a class="room__title" href="#">
                                     Бизнес-люкс
                                 </a>
-                            </div>
-                            <p class="rooms__room--description--text">
+                            </h3>
+                            <p class="room__text-description">
                                 Трёхкомнатный номер с панорамным видом на Москва-реку
                             </p>
-                            <div class="rooms__room--description--price">
+                            <div class="room__price-block room__price-block--hidden">
                                 <div>
-                                    <p>Цена за сутки <br>от
-                                        <span> 4900
-                                            <span> ₽</span>
+                                    <p class="room__price-text">Цена за сутки <br>от
+                                        <span class="room__price-text--red-price"> 4900
+                                            <span class="room__price-text--grey-symbol-rub"> ₽</span>
                                         </span>
                                     </p>
                                 </div>
-                                <a href="#" class="rooms__room--description--reserved-button">Забронировать</a>
+                                <a class="room__reserved-button" href="#">Забронировать</a>
                             </div>
-                            <div class="rooms__room--description--room-reserved">
-                                <p>Номер зарезервирован<br>Перейти к
-                                    <a href="#"> оплате</a>
+                            <div class="room__room-reserved-block">
+                                <p class="room__room-reserved-text">Номер зарезервирован<br>Перейти к
+                                    <a class="room__room-reserved-link" href="#"> оплате</a>
                                 </p>
                             </div>
                         </div>
                     </div>
+                    
                 </section>
             </div>
         </main>
