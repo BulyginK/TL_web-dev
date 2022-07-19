@@ -1,3 +1,5 @@
 export const reservedRoom = () => {
-    console.log('+');
+    console.log('!');
 }
+
+export default reservedRoom

@@ -1,3 +1,3 @@
-import { reservedRoom } from './modules/reservedRoom';
+import reservedRoom from './modules/reservedRoom';
 
 reservedRoom()
