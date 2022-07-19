@@ -169,3 +169,17 @@
     color: #FF4B77;
     text-decoration: none;
 }
+
+@media (max-width: 1279px) {
+    .room {
+        width: 336px;
+        min-height: 420px;
+    }
+
+    .room__foto {
+        object-fit: cover;
+        object-position: 0 0;
+        width: 336px;
+        min-height: 420px;
+    }
+}
