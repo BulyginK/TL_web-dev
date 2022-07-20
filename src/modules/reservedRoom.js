@@ -1,5 +1,5 @@
 export const reservedRoom = () => {
-    console.log('!');
+    const reservedButton = document.querySelectorAll('.room__reserved-button');
 }
 
 export default reservedRoom
