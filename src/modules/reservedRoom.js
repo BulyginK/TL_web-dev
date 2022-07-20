@@ -10,9 +10,11 @@ export const reservedRoom = () => {
             const priceBlock = room.querySelector('.room__price-block');
             const reservedBlock = room.querySelector('.room__room-reserved-block');
             const roomOverlay = room.querySelector('.room--overlay');
-            
+
+            button.classList.add('room__reserved-button--pressed');
+
             room.addEventListener('mouseleave', () => {
-                if (reservedBlock.classList.contains('display-none')) {
+                if (reservedBlock.classList.contains('display-none') && button.classList.contains('room__reserved-button--pressed')) {
                     priceBlock.classList.add('display-none');
                     reservedBlock.classList.remove('display-none');
                     roomOverlay.classList.remove('display-none');
@@ -21,21 +23,21 @@ export const reservedRoom = () => {
         })
     })
 
-    // rooms.forEach((room) => {
-    //     room.addEventListener('click', () => {
-    //         console.log('+');
-    //         const priceBlock = room.querySelector('.room__price-block');
-    //         const reservedBlock = room.querySelector('.room__room-reserved-block');
-    //         const roomOverlay = room.querySelector('.room--overlay');
+    rooms.forEach((room) => {
+        room.addEventListener('click', () => {
+            const button = room.querySelector('.room__reserved-button');
+            const priceBlock = room.querySelector('.room__price-block');
+            const reservedBlock = room.querySelector('.room__room-reserved-block');
+            const roomOverlay = room.querySelector('.room--overlay');
 
-    //         if (!reservedBlock.classList.contains('display-none')) {
-    //             priceBlock.classList.remove('display-none');
-    //             reservedBlock.classList.add('display-none');
-    //             roomOverlay.classList.add('display-none');
-    //         }
-    //     })
-    // })
-
+            if (!reservedBlock.classList.contains('display-none')) {
+                priceBlock.classList.remove('display-none');
+                reservedBlock.classList.add('display-none');
+                roomOverlay.classList.add('display-none');
+                button.classList.remove('room__reserved-button--pressed');
+            }
+        })
+    })
 }
 
 export default reservedRoom
