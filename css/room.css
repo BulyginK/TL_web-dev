@@ -69,7 +69,7 @@
 
 .room__icon-discount--hidden {
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.2s;
 }
 
 .room__info {
@@ -178,6 +178,14 @@
 .room__room-reserved-link {
     color: #FF4B77;
     text-decoration: none;
+}
+
+.room__room-reserved-link:hover {
+    text-decoration: underline;
+}
+
+.room__room-reserved-link:active {
+    color: #FF97B0;
 }
 
 .display-none {

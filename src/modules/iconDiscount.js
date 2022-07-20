@@ -5,7 +5,7 @@ export const iconDiscount = () => {
         const roomReservedBlock = room.querySelector('.room__room-reserved-block');
         const iconDiscount = room.querySelector('.room__icon-discount');
 
-        room.addEventListener('mouseover', () => {
+        room.addEventListener('mouseenter', () => {
             if (roomReservedBlock.classList.contains('display-none')) {
                 iconDiscount.classList.remove('room__icon-discount--hidden');
             }
@@ -13,14 +13,12 @@ export const iconDiscount = () => {
     })
 
     rooms.forEach((room) => {
-        room.addEventListener('mouseout', () => {
+        room.addEventListener('mouseleave', () => {
             const iconDiscount = room.querySelector('.room__icon-discount');
 
             iconDiscount.classList.add('room__icon-discount--hidden');
         })
-    })
-
-    
+    })    
 }
 
 export default iconDiscount
