@@ -29,7 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background: linear-gradient(180deg, #0A22401A 0%, #0A2240 100%);
     border-radius: 10px;
 }
@@ -115,9 +115,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 96px;
+    min-height: 96px;
     border-top: 1px solid #FFFFFF33;
-    padding: 0 24px;
+    margin: 0 23px;
 }
 
 .room__price-text {
@@ -141,6 +141,7 @@
 }
 
 .room__reserved-button {
+    display: block;
     padding: 11px 25px;
     font: 16px/24px 'Open Sans';
     font-weight: 700;
@@ -196,13 +197,107 @@
 @media (max-width: 1279px) {
     .room {
         width: 336px;
-        min-height: 420px;
+        height: 422px;
+        margin: 0 28px 37px 0;
+    }
+
+    .room--overlay {
+        height: 99%;
     }
 
     .room__foto {
-        object-fit: cover;
-        object-position: 0 0;
-        width: 336px;
-        min-height: 420px;
+        width: 334px;
+        height: 420px;
+    }
+
+    .room__price-block {
+        display: block;
+        width: 288px;
+        min-height: 161px;
+        padding-top: 18px;
+    }
+
+    .room__price-text {
+        margin-bottom: 18px;
+    }
+
+    .room__reserved-button {
+        text-align: center;
+        width: 288px;
+    }
+
+    .display-none {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .room {
+        width: 288px;
+        height: 347px;
+        border-radius: 13px;
+        margin: 0 12px 32px 0;
+    }
+
+    .room__foto-block::after {
+        content: "";
+        width: 100%;
+        height: 105%;
+        background: linear-gradient(180deg, #0A22401A 0%, #0A2240 100%);
+        border-radius: 13px;
+    }
+
+    .room__foto {
+        width: 286px;
+        height: 345px;
+    }
+
+    .room__title {
+        font: 20px/26px 'Roboto';
+        font-weight: 700;
+        padding: 0 19px;
+    }
+
+    .room__text-description {
+        font: 14px/21px 'Open Sans';
+        padding: 9px 21px 20px;
+    }
+
+    .room__price-block {
+        display: block;
+        width: 240px;
+        min-height: 149px;
+    }
+
+    .room__reserved-button {
+        text-align: center;
+        width: 242px;
+    }
+
+    .room__price-text {
+        font: 14px/21px 'Open Sans';
+        font-weight: 700;
+    }
+    
+    .room__price-text--red-price {
+        font: 20px/32px 'Roboto';
+        font-weight: 700;
+        color: #FF4B77;
+    }
+    
+    .room__price-text--grey-symbol-rub {
+        color: #999999;
+        font-weight: 400;
+    }
+
+    .room__reserved-button {
+        font: 14px/24px 'Open Sans';
+        font-weight: 700;
+        border-radius: 3px;
+        padding: 9px 25px;
+    }
+
+    .display-none {
+        display: none;
     }
 }
